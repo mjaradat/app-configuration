@@ -83,10 +83,10 @@
       }
     },
     "radius": {
-      "sm": "6px",
-      "md": "10px",
-      "lg": "14px",
-      "xl": "18px"
+      "sm": "20px",
+      "md": "28px",
+      "lg": "36px",
+      "xl": "48px"
     },
     "fonts": {
       "english": {
