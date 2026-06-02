@@ -126,7 +126,7 @@
     "licenseToken": "dev-unsigned",
     "devUnsignedPayload": {
       "clientCode": "apqc",
-      "licensedModules": ["audit"],
+      "licensedModules": ["audit", "wallet", "appraisals"],
       "features": {
         "audit": {
           "regulations": true,
@@ -145,6 +145,26 @@
       "baseUrl": "https://qc02.cubescpm.com/AuditManagement/BE",
       "apiBaseUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
       "healthCheckUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
+      "capabilities": {
+        "regulations": true,
+        "reports": true,
+        "administration": true
+      }
+    },
+    "wallet": {
+      "baseUrl": "https://qc02.cubescpm.com/WalletManagement/BE",
+      "apiBaseUrl": "https://qc02.cubescpm.com/WalletManagement/BE/api",
+      "healthCheckUrl": "https://qc02.cubescpm.com/WalletManagement/BE/api",
+      "capabilities": {
+        "regulations": true,
+        "reports": true,
+        "administration": true
+      }
+    },
+    "appraisals": {
+      "baseUrl": "https://qc02.cubescpm.com/AppraisalsManagement/BE",
+      "apiBaseUrl": "https://qc02.cubescpm.com/AppraisalsManagement/BE/api",
+      "healthCheckUrl": "https://qc02.cubescpm.com/AppraisalsManagement/BE/api",
       "capabilities": {
         "regulations": true,
         "reports": true,
