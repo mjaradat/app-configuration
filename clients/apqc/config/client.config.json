@@ -50,11 +50,11 @@
         "accent": "#F59E0B",
         "accentForeground": "#FFFFFF",
         "background": "#FFF1F2",
-        "surface": "#FFFFFF",
-        "surfaceMuted": "#F1F5F9",
+        "surface": "#FEF3C7",
+        "surfaceMuted": "#DCFCE7",
         "text": "#0F172A",
         "textMuted": "#64748B",
-        "border": "#E2E8F0",
+        "border": "#FF00FF",
         "input": "#CBD5E1",
         "ring": "#7C3AED",
         "success": "#16A34A",
@@ -126,18 +126,12 @@
     "licenseToken": "dev-unsigned",
     "devUnsignedPayload": {
       "clientCode": "apqc",
-      "licensedModules": ["audit", "wallet", "appraisals"],
+      "licensedModules": ["audit", "wallets", "appraisals"],
       "features": {
         "audit": {
           "regulations": true,
           "reports": true,
           "administration": true
-        },
-        "wallet": {
-          "enabled": true
-        },
-        "appraisals": {
-          "enabled": true
         }
       },
       "issuedAt": "2026-06-01T23:27:22Z",
