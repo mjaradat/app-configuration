@@ -10,10 +10,7 @@
   },
   "app": {
     "defaultLanguage": "en",
-    "supportedLanguages": [
-      "en",
-      "ar"
-    ],
+    "supportedLanguages": ["en", "ar"],
     "defaultDirection": "ltr",
     "defaultTheme": "light",
     "allowUserThemeSwitch": true,
@@ -35,28 +32,22 @@
     "enabled": true,
     "theme": {
       "defaultMode": "light",
-      "supportedModes": [
-        "light",
-        "dark"
-      ],
+      "supportedModes": ["light", "dark"],
       "allowUserThemeSwitch": true
     },
     "language": {
       "defaultLanguage": "en",
-      "supportedLanguages": [
-        "en",
-        "ar"
-      ],
+      "supportedLanguages": ["en", "ar"],
       "defaultDirection": "ltr"
     },
     "colors": {
       "light": {
-        "primary": "#2563EB",
-        "primaryHover": "#1D4ED8",
+        "primary": "#7C3AED",
+        "primaryHover": "#6D28D9",
         "primaryForeground": "#FFFFFF",
-        "secondary": "#0F172A",
+        "secondary": "#111827",
         "secondaryForeground": "#FFFFFF",
-        "accent": "#14B8A6",
+        "accent": "#F59E0B",
         "accentForeground": "#FFFFFF",
         "background": "#F8FAFC",
         "surface": "#FFFFFF",
@@ -65,13 +56,13 @@
         "textMuted": "#64748B",
         "border": "#E2E8F0",
         "input": "#CBD5E1",
-        "ring": "#2563EB",
+        "ring": "#7C3AED",
         "success": "#16A34A",
         "warning": "#F59E0B",
         "danger": "#DC2626"
       },
       "dark": {
-        "primary": "#60A5FA",
+        "primary": "#A78BFA",
         "primaryHover": "#93C5FD",
         "primaryForeground": "#082F49",
         "secondary": "#E2E8F0",
@@ -85,7 +76,7 @@
         "textMuted": "#94A3B8",
         "border": "#334155",
         "input": "#475569",
-        "ring": "#60A5FA",
+        "ring": "#A78BFA",
         "success": "#22C55E",
         "warning": "#FBBF24",
         "danger": "#F87171"
@@ -135,9 +126,7 @@
     "licenseToken": "dev-unsigned",
     "devUnsignedPayload": {
       "clientCode": "apqc",
-      "licensedModules": [
-        "audit"
-      ],
+      "licensedModules": ["audit"],
       "features": {
         "audit": {
           "regulations": true,
@@ -181,14 +170,7 @@
   },
   "uploads": {
     "maxFileSizeMb": 25,
-    "allowedExtensions": [
-      "pdf",
-      "png",
-      "jpg",
-      "jpeg",
-      "docx",
-      "xlsx"
-    ]
+    "allowedExtensions": ["pdf", "png", "jpg", "jpeg", "docx", "xlsx"]
   },
   "support": {
     "supportEmail": "support@example.com",
