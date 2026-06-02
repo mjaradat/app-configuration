@@ -90,8 +90,8 @@
     },
     "fonts": {
       "english": {
-        "family": "Inter",
-        "cssFamily": "Inter, Arial, sans-serif",
+        "family": "Georgia",
+        "cssFamily": "Georgia, serif",
         "source": "system-or-self-hosted",
         "manifest": "../fonts/font-manifest.json"
       },
