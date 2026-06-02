@@ -1,0 +1,32 @@
+{
+  "version": "1.1.0",
+  "generatedAt": "2026-05-18T22:26:07.981105+00:00",
+  "preferredConfigFile": "client.config.json",
+  "fallbackConfigFile": "branding.config.json",
+  "clients": [
+    {
+      "key": "demo-client",
+      "displayName": "Demo Client",
+      "shortName": "DEMO",
+      "clientConfigUrl": "/clients/demo-client/config/client.config.json",
+      "brandingConfigUrl": "/clients/demo-client/config/branding.config.json",
+      "previewImage": "/clients/demo-client/assets/images/brand-preview.png"
+    },
+    {
+      "key": "apqc",
+      "displayName": "APQC",
+      "shortName": "APQC",
+      "clientConfigUrl": "/clients/apqc/config/client.config.json",
+      "brandingConfigUrl": "/clients/apqc/config/branding.config.json",
+      "previewImage": "/clients/apqc/assets/images/brand-preview.png"
+    },
+    {
+      "key": "ef",
+      "displayName": "EF Appraisals",
+      "shortName": "EF",
+      "clientConfigUrl": "/clients/ef/config/client.config.json",
+      "brandingConfigUrl": "/clients/ef/config/branding.config.json",
+      "previewImage": "/clients/ef/assets/images/brand-preview.png"
+    }
+  ]
+}

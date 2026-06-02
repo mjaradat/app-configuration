@@ -1,16 +1,19 @@
 {
   "$schema": "../../../schemas/client-runtime-config.schema.json",
-  "version": "2.0.0",
-  "publishedAt": "2026-06-01T23:27:22Z",
+  "version": "1.1.0",
+  "publishedAt": "2026-05-18T22:26:08.071564+00:00",
   "client": {
-    "key": "apqc",
-    "displayName": "APQC",
-    "shortName": "APQC",
+    "key": "demo-client",
+    "displayName": "Demo Client",
+    "shortName": "DEMO",
     "environment": "testing"
   },
   "app": {
     "defaultLanguage": "en",
-    "supportedLanguages": ["en", "ar"],
+    "supportedLanguages": [
+      "en",
+      "ar"
+    ],
     "defaultDirection": "ltr",
     "defaultTheme": "light",
     "allowUserThemeSwitch": true,
@@ -32,22 +35,28 @@
     "enabled": true,
     "theme": {
       "defaultMode": "light",
-      "supportedModes": ["light", "dark"],
+      "supportedModes": [
+        "light",
+        "dark"
+      ],
       "allowUserThemeSwitch": true
     },
     "language": {
       "defaultLanguage": "en",
-      "supportedLanguages": ["en", "ar"],
+      "supportedLanguages": [
+        "en",
+        "ar"
+      ],
       "defaultDirection": "ltr"
     },
     "colors": {
       "light": {
-        "primary": "#7C3AED",
-        "primaryHover": "#6D28D9",
+        "primary": "#2563EB",
+        "primaryHover": "#1D4ED8",
         "primaryForeground": "#FFFFFF",
-        "secondary": "#111827",
+        "secondary": "#0F172A",
         "secondaryForeground": "#FFFFFF",
-        "accent": "#F59E0B",
+        "accent": "#14B8A6",
         "accentForeground": "#FFFFFF",
         "background": "#F8FAFC",
         "surface": "#FFFFFF",
@@ -56,13 +65,13 @@
         "textMuted": "#64748B",
         "border": "#E2E8F0",
         "input": "#CBD5E1",
-        "ring": "#7C3AED",
+        "ring": "#2563EB",
         "success": "#16A34A",
         "warning": "#F59E0B",
         "danger": "#DC2626"
       },
       "dark": {
-        "primary": "#A78BFA",
+        "primary": "#60A5FA",
         "primaryHover": "#93C5FD",
         "primaryForeground": "#082F49",
         "secondary": "#E2E8F0",
@@ -76,7 +85,7 @@
         "textMuted": "#94A3B8",
         "border": "#334155",
         "input": "#475569",
-        "ring": "#A78BFA",
+        "ring": "#60A5FA",
         "success": "#22C55E",
         "warning": "#FBBF24",
         "danger": "#F87171"
@@ -122,51 +131,74 @@
     "grantType": "password",
     "requiresClientKey": false
   },
-  "license": {
-    "licenseToken": "dev-unsigned",
-    "devUnsignedPayload": {
-      "clientCode": "apqc",
-      "licensedModules": ["audit", "wallet", "appraisals"],
-      "features": {
-        "audit": {
-          "regulations": true,
-          "reports": true,
-          "administration": true
-        },
-        "wallet": {
-          "enabled": true
-        },
-        "appraisals": {
-          "enabled": true
-        }
-      },
-      "issuedAt": "2026-06-01T23:27:22Z",
-      "expiresAt": "2027-06-01T23:27:22Z",
-      "licenseVersion": 1,
-      "mode": "dev-unsigned"
-    }
-  },
-  "moduleConfig": {
+  "apis": {
+    "auth": {
+      "baseUrl": "https://qc09.cubescpm.com/Cubes",
+      "tokenEndpoint": "https://qc09.cubescpm.com/Cubes/Auth/Token"
+    },
     "audit": {
       "baseUrl": "https://qc02.cubescpm.com/AuditManagement/BE",
       "apiBaseUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
-      "healthCheckUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
-      "capabilities": {
-        "regulations": true,
-        "reports": true,
-        "administration": true
-      }
-    },
-    "wallet": {
-      "baseUrl": "https://qc02.cubescpm.com/WalletManagement/BE",
-      "apiBaseUrl": "https://qc02.cubescpm.com/WalletManagement/BE/api",
-      "healthCheckUrl": "https://qc02.cubescpm.com/WalletManagement/BE/api"
-    },
-    "appraisals": {
-      "baseUrl": "https://qc02.cubescpm.com/AppraisalsManagement/BE",
-      "apiBaseUrl": "https://qc02.cubescpm.com/AppraisalsManagement/BE/api",
-      "healthCheckUrl": "https://qc02.cubescpm.com/AppraisalsManagement/BE/api"
+      "healthCheckUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api"
     }
+  },
+  "modules": {
+    "audit": {
+      "enabled": true,
+      "displayName": {
+        "en": "Audit",
+        "ar": "التدقيق"
+      },
+      "apiKey": "audit",
+      "apiBaseUrlRef": "apis.audit.apiBaseUrl",
+      "requiresLicense": true
+    },
+    "surveys": {
+      "enabled": true,
+      "displayName": {
+        "en": "Surveys",
+        "ar": "الاستبيانات"
+      },
+      "requiresLicense": true
+    },
+    "policies": {
+      "enabled": false,
+      "displayName": {
+        "en": "Policies",
+        "ar": "السياسات"
+      },
+      "requiresLicense": true
+    },
+    "projects": {
+      "enabled": true,
+      "displayName": {
+        "en": "Projects",
+        "ar": "المشاريع"
+      },
+      "requiresLicense": false
+    },
+    "riskManagement": {
+      "enabled": false,
+      "displayName": {
+        "en": "Risk Management",
+        "ar": "إدارة المخاطر"
+      },
+      "requiresLicense": true
+    }
+  },
+  "license": {
+    "enabled": true,
+    "licenseId": "demo-client-qc-license",
+    "publicLicenseKey": "DEMO-TEST-PUBLIC-LICENSE-KEY-NOT-SECRET",
+    "mode": "test",
+    "validationStrategy": "server-side",
+    "allowedModules": [
+      "audit",
+      "projects",
+      "surveys"
+    ],
+    "expiresAt": null,
+    "note": "This is public test metadata only. Do not put real private license secrets in public Cloudflare config."
   },
   "features": {
     "offlineMode": false,
@@ -186,7 +218,14 @@
   },
   "uploads": {
     "maxFileSizeMb": 25,
-    "allowedExtensions": ["pdf", "png", "jpg", "jpeg", "docx", "xlsx"]
+    "allowedExtensions": [
+      "pdf",
+      "png",
+      "jpg",
+      "jpeg",
+      "docx",
+      "xlsx"
+    ]
   },
   "support": {
     "supportEmail": "support@example.com",

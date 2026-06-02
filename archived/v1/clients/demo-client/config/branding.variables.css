@@ -1,0 +1,22 @@
+:root {
+  --brand-primary: #2563EB;
+  --brand-primary-hover: #1D4ED8;
+  --brand-primary-foreground: #FFFFFF;
+  --brand-secondary: #0F172A;
+  --brand-accent: #14B8A6;
+  --brand-background: #F8FAFC;
+  --brand-surface: #FFFFFF;
+  --brand-text: #0F172A;
+  --brand-text-muted: #64748B;
+  --brand-border: #E2E8F0;
+  --brand-radius-md: 10px;
+  --brand-font-en: Inter, Arial, sans-serif;
+  --brand-font-ar: 'Readex Pro', Tahoma, Arial, sans-serif;
+}
+.dark {
+  --brand-primary: #60A5FA;
+  --brand-background: #020617;
+  --brand-surface: #0F172A;
+  --brand-text: #F8FAFC;
+  --brand-border: #334155;
+}

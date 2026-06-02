@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cubes Client Runtime Configuration",
+  "type": "object",
+  "required": [
+    "version",
+    "client"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "publishedAt": {
+      "type": "string"
+    },
+    "client": {
+      "type": "object"
+    },
+    "app": {
+      "type": "object"
+    },
+    "startupFlow": {
+      "type": "object"
+    },
+    "branding": {
+      "type": "object"
+    },
+    "auth": {
+      "type": "object"
+    },
+    "apis": {
+      "type": "object"
+    },
+    "modules": {
+      "type": "object"
+    },
+    "license": {
+      "type": "object"
+    },
+    "features": {
+      "type": "object"
+    },
+    "support": {
+      "type": "object"
+    },
+    "security": {
+      "type": "object"
+    },
+    "runtime": {
+      "type": "object"
+    }
+  }
+}

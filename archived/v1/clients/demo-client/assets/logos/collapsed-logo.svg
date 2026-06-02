@@ -1,0 +1,5 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demo Client icon">
+<rect width="128" height="128" rx="32" fill="#2563EB"/>
+<circle cx="64" cy="64" r="38" fill="white"/>
+<path d="M48 64L60 76L82 50" stroke="#2563EB" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

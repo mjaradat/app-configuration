@@ -1,0 +1,15 @@
+{
+  "note": "No font binaries included. Add only licensed client-provided WOFF2 files here later.",
+  "fonts": {
+    "english": {
+      "family": "Inter",
+      "cssFamily": "Inter, Arial, sans-serif",
+      "files": []
+    },
+    "arabic": {
+      "family": "Readex Pro",
+      "cssFamily": "'Readex Pro', Tahoma, Arial, sans-serif",
+      "files": []
+    }
+  }
+}

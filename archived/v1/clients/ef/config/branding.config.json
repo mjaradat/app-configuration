@@ -1,0 +1,148 @@
+{
+  "$schema": "../../../schemas/branding.schema.json",
+  "version": "1.1.0",
+  "publishedAt": "2026-05-18T22:26:08.199793+00:00",
+  "client": {
+    "key": "ef",
+    "displayName": "EF Appraisals",
+    "shortName": "EF",
+    "environment": "qc"
+  },
+  "branding": {
+    "enabled": true,
+    "theme": {
+      "defaultMode": "light",
+      "supportedModes": [
+        "light",
+        "dark"
+      ],
+      "allowUserThemeSwitch": true
+    },
+    "language": {
+      "defaultLanguage": "ar",
+      "supportedLanguages": [
+        "en",
+        "ar"
+      ],
+      "defaultDirection": "rtl"
+    },
+    "colors": {
+      "light": {
+        "primary": "#059669",
+        "primaryHover": "#047857",
+        "primaryForeground": "#FFFFFF",
+        "secondary": "#064E3B",
+        "secondaryForeground": "#FFFFFF",
+        "accent": "#0EA5E9",
+        "accentForeground": "#FFFFFF",
+        "background": "#F8FAFC",
+        "surface": "#FFFFFF",
+        "surfaceMuted": "#F1F5F9",
+        "text": "#0F172A",
+        "textMuted": "#64748B",
+        "border": "#E2E8F0",
+        "input": "#CBD5E1",
+        "ring": "#059669",
+        "success": "#16A34A",
+        "warning": "#F59E0B",
+        "danger": "#DC2626"
+      },
+      "dark": {
+        "primary": "#34D399",
+        "primaryHover": "#93C5FD",
+        "primaryForeground": "#082F49",
+        "secondary": "#E2E8F0",
+        "secondaryForeground": "#0F172A",
+        "accent": "#2DD4BF",
+        "accentForeground": "#042F2E",
+        "background": "#020617",
+        "surface": "#0F172A",
+        "surfaceMuted": "#1E293B",
+        "text": "#F8FAFC",
+        "textMuted": "#94A3B8",
+        "border": "#334155",
+        "input": "#475569",
+        "ring": "#34D399",
+        "success": "#22C55E",
+        "warning": "#FBBF24",
+        "danger": "#F87171"
+      }
+    },
+    "radius": {
+      "sm": "6px",
+      "md": "10px",
+      "lg": "14px",
+      "xl": "18px"
+    },
+    "fonts": {
+      "english": {
+        "family": "Inter",
+        "cssFamily": "Inter, Arial, sans-serif",
+        "source": "system-or-self-hosted",
+        "manifest": "../fonts/font-manifest.json"
+      },
+      "arabic": {
+        "family": "Readex Pro",
+        "cssFamily": "'Readex Pro', Tahoma, Arial, sans-serif",
+        "source": "system-or-self-hosted",
+        "manifest": "../fonts/font-manifest.json"
+      }
+    },
+    "assets": {
+      "loginLogo": "../assets/logos/login-logo.svg",
+      "headerLogo": "../assets/logos/header-logo.svg",
+      "collapsedLogo": "../assets/logos/collapsed-logo.svg",
+      "faviconSvg": "../assets/icons/favicon.svg",
+      "faviconPng": "../assets/icons/favicon-32.png",
+      "appleTouchIcon": "../assets/icons/apple-touch-icon.png",
+      "appIcon1024": "../assets/icons/app-icon-1024.png",
+      "loginBackground": "../assets/images/login-background.svg",
+      "brandPreview": "../assets/images/brand-preview.png"
+    }
+  },
+  "modules": {
+    "audit": {
+      "enabled": true,
+      "displayName": {
+        "en": "Audit",
+        "ar": "التدقيق"
+      },
+      "apiKey": "audit",
+      "apiBaseUrlRef": "apis.audit.apiBaseUrl",
+      "requiresLicense": true
+    },
+    "surveys": {
+      "enabled": false,
+      "displayName": {
+        "en": "Surveys",
+        "ar": "الاستبيانات"
+      },
+      "requiresLicense": true
+    },
+    "policies": {
+      "enabled": false,
+      "displayName": {
+        "en": "Policies",
+        "ar": "السياسات"
+      },
+      "requiresLicense": true
+    },
+    "projects": {
+      "enabled": true,
+      "displayName": {
+        "en": "Projects",
+        "ar": "المشاريع"
+      },
+      "requiresLicense": false
+    },
+    "riskManagement": {
+      "enabled": false,
+      "displayName": {
+        "en": "Risk Management",
+        "ar": "إدارة المخاطر"
+      },
+      "requiresLicense": true
+    }
+  },
+  "note": "Backward-compatible file. Prefer client.config.json for the full client runtime configuration."
+}

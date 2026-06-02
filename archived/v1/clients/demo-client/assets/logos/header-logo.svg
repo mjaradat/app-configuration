@@ -1,0 +1,6 @@
+<svg width="420" height="80" viewBox="0 0 420 80" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Demo Client header logo">
+<rect x="8" y="8" width="64" height="64" rx="16" fill="#2563EB"/>
+<circle cx="40" cy="40" r="20" fill="white"/>
+<path d="M32 40L39 48L51 32" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="92" y="50" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Demo Client</text>
+</svg>

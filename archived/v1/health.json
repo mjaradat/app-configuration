@@ -1,0 +1,7 @@
+{
+  "status": "ok",
+  "service": "cubes-client-runtime-config-assets",
+  "generatedAt": "2026-05-18T22:26:07.980256+00:00",
+  "preferredConfigFile": "client.config.json",
+  "fallbackConfigFile": "branding.config.json"
+}
