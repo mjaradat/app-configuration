@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "publishedAt": "2026-06-01T23:27:22Z",
+  "clients": [
+    {
+      "key": "demo-client",
+      "displayName": "Demo Client",
+      "configUrl": "/clients/demo-client/config/client.config.json"
+    },
+    {
+      "key": "ef",
+      "displayName": "EF",
+      "configUrl": "/clients/ef/config/client.config.json"
+    },
+    {
+      "key": "apqc",
+      "displayName": "APQC",
+      "configUrl": "/clients/apqc/config/client.config.json"
+    }
+  ]
+}

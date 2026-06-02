@@ -1,0 +1,15 @@
+{
+  "english": {
+    "family": "Inter",
+    "cssFamily": "Inter, Arial, sans-serif",
+    "source": "system-or-self-hosted",
+    "files": []
+  },
+  "arabic": {
+    "family": "Readex Pro",
+    "cssFamily": "'Readex Pro', Tahoma, Arial, sans-serif",
+    "source": "system-or-self-hosted",
+    "files": []
+  },
+  "note": "No font files are included. The app should use system/self-hosted fonts if available."
+}

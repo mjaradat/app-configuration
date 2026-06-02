@@ -1,0 +1,36 @@
+{
+  "removedOldFields": [
+    "apis",
+    "modules",
+    "license.enabled",
+    "license.licenseId",
+    "license.publicLicenseKey",
+    "license.mode",
+    "license.validationStrategy",
+    "license.allowedModules",
+    "license.note"
+  ],
+  "newFields": [
+    "license.licenseToken",
+    "license.devUnsignedPayload",
+    "moduleConfig.audit.baseUrl",
+    "moduleConfig.audit.apiBaseUrl",
+    "moduleConfig.audit.healthCheckUrl",
+    "moduleConfig.audit.capabilities"
+  ],
+  "preservedFromUploadedDemoConfig": [
+    "client",
+    "app",
+    "startupFlow",
+    "branding",
+    "auth",
+    "features",
+    "runtime",
+    "uploads",
+    "support",
+    "security",
+    "auth.baseUrl",
+    "auth.tokenEndpoint",
+    "audit base/api URLs moved into moduleConfig.audit"
+  ]
+}

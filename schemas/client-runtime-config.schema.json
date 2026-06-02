@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cubes Hub Client Runtime Config",
+  "type": "object",
+  "required": [
+    "$schema",
+    "version",
+    "publishedAt",
+    "client",
+    "app",
+    "startupFlow",
+    "branding",
+    "auth",
+    "license",
+    "moduleConfig",
+    "features",
+    "runtime",
+    "uploads",
+    "support",
+    "security"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "publishedAt": {
+      "type": "string"
+    },
+    "client": {
+      "type": "object",
+      "required": [
+        "key",
+        "displayName",
+        "shortName",
+        "environment"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "shortName": {
+          "type": "string"
+        },
+        "environment": {
+          "type": "string"
+        }
+      }
+    },
+    "app": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "startupFlow": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "branding": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "auth": {
+      "type": "object",
+      "required": [
+        "provider",
+        "baseUrl",
+        "tokenEndpoint",
+        "method",
+        "grantType",
+        "requiresClientKey"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "baseUrl": {
+          "type": "string"
+        },
+        "tokenEndpoint": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string"
+        },
+        "grantType": {
+          "type": "string"
+        },
+        "requiresClientKey": {
+          "type": "boolean"
+        }
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": [
+        "licenseToken"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "licenseToken": {
+          "type": "string"
+        },
+        "devUnsignedPayload": {
+          "type": "object",
+          "required": [
+            "clientCode",
+            "licensedModules",
+            "features",
+            "licenseVersion",
+            "mode"
+          ],
+          "additionalProperties": true,
+          "properties": {
+            "clientCode": {
+              "type": "string"
+            },
+            "licensedModules": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "features": {
+              "type": "object",
+              "additionalProperties": true
+            },
+            "issuedAt": {
+              "type": "string"
+            },
+            "expiresAt": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "licenseVersion": {
+              "type": "number"
+            },
+            "mode": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "moduleConfig": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": true,
+        "properties": {
+          "baseUrl": {
+            "type": "string"
+          },
+          "apiBaseUrl": {
+            "type": "string"
+          },
+          "healthCheckUrl": {
+            "type": "string"
+          },
+          "capabilities": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "uploads": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "support": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "security": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

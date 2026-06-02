@@ -1,0 +1,202 @@
+{
+  "$schema": "../../../schemas/client-runtime-config.schema.json",
+  "version": "2.0.0",
+  "publishedAt": "2026-06-01T23:27:22Z",
+  "client": {
+    "key": "apqc",
+    "displayName": "APQC",
+    "shortName": "APQC",
+    "environment": "testing"
+  },
+  "app": {
+    "defaultLanguage": "en",
+    "supportedLanguages": [
+      "en",
+      "ar"
+    ],
+    "defaultDirection": "ltr",
+    "defaultTheme": "light",
+    "allowUserThemeSwitch": true,
+    "allowUserLanguageSwitch": true,
+    "requestTimeoutMs": 30000,
+    "firstScreen": "client-runtime-config",
+    "secondScreen": "configuration-page"
+  },
+  "startupFlow": {
+    "firstScreen": "client-runtime-config",
+    "secondScreen": "configuration-page",
+    "showClientRuntimeConfigBeforeConfigurationPage": true,
+    "allowSkipClientKey": true,
+    "navigateToConfigurationPageWhenSkipped": true,
+    "navigateToConfigurationPageWhenClientConfigLoaded": true,
+    "doNotBlockAppWhenClientConfigFails": true
+  },
+  "branding": {
+    "enabled": true,
+    "theme": {
+      "defaultMode": "light",
+      "supportedModes": [
+        "light",
+        "dark"
+      ],
+      "allowUserThemeSwitch": true
+    },
+    "language": {
+      "defaultLanguage": "en",
+      "supportedLanguages": [
+        "en",
+        "ar"
+      ],
+      "defaultDirection": "ltr"
+    },
+    "colors": {
+      "light": {
+        "primary": "#2563EB",
+        "primaryHover": "#1D4ED8",
+        "primaryForeground": "#FFFFFF",
+        "secondary": "#0F172A",
+        "secondaryForeground": "#FFFFFF",
+        "accent": "#14B8A6",
+        "accentForeground": "#FFFFFF",
+        "background": "#F8FAFC",
+        "surface": "#FFFFFF",
+        "surfaceMuted": "#F1F5F9",
+        "text": "#0F172A",
+        "textMuted": "#64748B",
+        "border": "#E2E8F0",
+        "input": "#CBD5E1",
+        "ring": "#2563EB",
+        "success": "#16A34A",
+        "warning": "#F59E0B",
+        "danger": "#DC2626"
+      },
+      "dark": {
+        "primary": "#60A5FA",
+        "primaryHover": "#93C5FD",
+        "primaryForeground": "#082F49",
+        "secondary": "#E2E8F0",
+        "secondaryForeground": "#0F172A",
+        "accent": "#2DD4BF",
+        "accentForeground": "#042F2E",
+        "background": "#020617",
+        "surface": "#0F172A",
+        "surfaceMuted": "#1E293B",
+        "text": "#F8FAFC",
+        "textMuted": "#94A3B8",
+        "border": "#334155",
+        "input": "#475569",
+        "ring": "#60A5FA",
+        "success": "#22C55E",
+        "warning": "#FBBF24",
+        "danger": "#F87171"
+      }
+    },
+    "radius": {
+      "sm": "6px",
+      "md": "10px",
+      "lg": "14px",
+      "xl": "18px"
+    },
+    "fonts": {
+      "english": {
+        "family": "Inter",
+        "cssFamily": "Inter, Arial, sans-serif",
+        "source": "system-or-self-hosted",
+        "manifest": "../fonts/font-manifest.json"
+      },
+      "arabic": {
+        "family": "Readex Pro",
+        "cssFamily": "'Readex Pro', Tahoma, Arial, sans-serif",
+        "source": "system-or-self-hosted",
+        "manifest": "../fonts/font-manifest.json"
+      }
+    },
+    "assets": {
+      "loginLogo": "../assets/logos/login-logo.svg",
+      "headerLogo": "../assets/logos/header-logo.svg",
+      "collapsedLogo": "../assets/logos/collapsed-logo.svg",
+      "faviconSvg": "../assets/icons/favicon.svg",
+      "faviconPng": "../assets/icons/favicon-32.png",
+      "appleTouchIcon": "../assets/icons/apple-touch-icon.png",
+      "appIcon1024": "../assets/icons/app-icon-1024.png",
+      "loginBackground": "../assets/images/login-background.svg",
+      "brandPreview": "../assets/images/brand-preview.png"
+    }
+  },
+  "auth": {
+    "provider": "cubes",
+    "baseUrl": "https://qc09.cubescpm.com/Cubes",
+    "tokenEndpoint": "https://qc09.cubescpm.com/Cubes/Auth/Token",
+    "method": "POST",
+    "grantType": "password",
+    "requiresClientKey": false
+  },
+  "license": {
+    "licenseToken": "dev-unsigned",
+    "devUnsignedPayload": {
+      "clientCode": "apqc",
+      "licensedModules": [
+        "audit"
+      ],
+      "features": {
+        "audit": {
+          "regulations": true,
+          "reports": true,
+          "administration": true
+        }
+      },
+      "issuedAt": "2026-06-01T23:27:22Z",
+      "expiresAt": "2027-06-01T23:27:22Z",
+      "licenseVersion": 1,
+      "mode": "dev-unsigned"
+    }
+  },
+  "moduleConfig": {
+    "audit": {
+      "baseUrl": "https://qc02.cubescpm.com/AuditManagement/BE",
+      "apiBaseUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
+      "healthCheckUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
+      "capabilities": {
+        "regulations": true,
+        "reports": true,
+        "administration": true
+      }
+    }
+  },
+  "features": {
+    "offlineMode": false,
+    "rememberClientKey": true,
+    "allowChangeClientKey": true,
+    "showClientNameInHeader": true,
+    "showClientLogoOnLogin": true,
+    "showModuleCards": true
+  },
+  "runtime": {
+    "maintenanceMode": false,
+    "minimumSupportedAppVersion": "1.0.0",
+    "forceUpdate": false,
+    "timezone": "Asia/Amman",
+    "dateFormat": "dd/MM/yyyy",
+    "timeFormat": "HH:mm"
+  },
+  "uploads": {
+    "maxFileSizeMb": 25,
+    "allowedExtensions": [
+      "pdf",
+      "png",
+      "jpg",
+      "jpeg",
+      "docx",
+      "xlsx"
+    ]
+  },
+  "support": {
+    "supportEmail": "support@example.com",
+    "supportPhone": "",
+    "helpUrl": ""
+  },
+  "security": {
+    "requiresHttps": true,
+    "allowInsecureHttpForTesting": false
+  }
+}
