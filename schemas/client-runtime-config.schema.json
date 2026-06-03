@@ -69,32 +69,23 @@
     "auth": {
       "type": "object",
       "required": [
-        "provider",
         "baseUrl",
         "tokenEndpoint",
-        "method",
-        "grantType",
         "requiresClientKey"
       ],
       "additionalProperties": false,
       "properties": {
-        "provider": {
-          "type": "string"
-        },
         "baseUrl": {
           "type": "string"
         },
         "tokenEndpoint": {
           "type": "string"
         },
-        "method": {
-          "type": "string"
-        },
-        "grantType": {
-          "type": "string"
-        },
         "requiresClientKey": {
           "type": "boolean"
+        },
+        "idleTimeoutMinutes": {
+          "type": "integer"
         }
       }
     },

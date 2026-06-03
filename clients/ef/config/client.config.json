@@ -18,9 +18,7 @@
     "defaultTheme": "light",
     "allowUserThemeSwitch": true,
     "allowUserLanguageSwitch": true,
-    "requestTimeoutMs": 30000,
-    "firstScreen": "client-runtime-config",
-    "secondScreen": "configuration-page"
+    "requestTimeoutMs": 30000
   },
   "startupFlow": {
     "firstScreen": "client-runtime-config",
@@ -124,12 +122,10 @@
     }
   },
   "auth": {
-    "provider": "cubes",
     "baseUrl": "https://qc09.cubescpm.com/Cubes",
     "tokenEndpoint": "https://qc09.cubescpm.com/Cubes/Auth/Token",
-    "method": "POST",
-    "grantType": "password",
-    "requiresClientKey": false
+    "requiresClientKey": false,
+    "idleTimeoutMinutes": 30
   },
   "license": {
     "licenseToken": "dev-unsigned",
