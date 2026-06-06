@@ -10,10 +10,7 @@
   },
   "app": {
     "defaultLanguage": "en",
-    "supportedLanguages": [
-      "en",
-      "ar"
-    ],
+    "supportedLanguages": ["en", "ar"],
     "defaultDirection": "ltr",
     "defaultTheme": "light",
     "allowUserThemeSwitch": true,
@@ -33,18 +30,12 @@
     "enabled": true,
     "theme": {
       "defaultMode": "light",
-      "supportedModes": [
-        "light",
-        "dark"
-      ],
+      "supportedModes": ["light", "dark"],
       "allowUserThemeSwitch": true
     },
     "language": {
       "defaultLanguage": "en",
-      "supportedLanguages": [
-        "en",
-        "ar"
-      ],
+      "supportedLanguages": ["en", "ar"],
       "defaultDirection": "ltr"
     },
     "colors": {
@@ -128,24 +119,7 @@
     "idleTimeoutMinutes": 30
   },
   "license": {
-    "licenseToken": "dev-unsigned",
-    "devUnsignedPayload": {
-      "clientCode": "ef",
-      "licensedModules": [
-        "audit"
-      ],
-      "features": {
-        "audit": {
-          "regulations": true,
-          "reports": true,
-          "administration": true
-        }
-      },
-      "issuedAt": "2026-06-01T23:27:22Z",
-      "expiresAt": "2027-06-01T23:27:22Z",
-      "licenseVersion": 1,
-      "mode": "dev-unsigned"
-    }
+    "licenseToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjdWJlcy1saWNlbnNlLXNlcnZpY2UiLCJhdWQiOiJjdWJlcy1odWIiLCJwcm9kdWN0IjoiY3ViZXMtaHViIiwiY2xpZW50Q29kZSI6ImVmIiwibGljZW5zZWRNb2R1bGVzIjpbImF1ZGl0IiwiYXBwcmFpc2FscyIsInN1cnZleXMiLCJ3YWxsZXRzIiwiaW5pdGlhdGl2ZXMiLCJkYXRhLW1hbmFnZW1lbnQiXSwiZmVhdHVyZXMiOnsiYXVkaXQiOnsicmVndWxhdGlvbnMiOnRydWUsInJlcG9ydHMiOnRydWUsImFkbWluaXN0cmF0aW9uIjp0cnVlfSwiYXBwcmFpc2FscyI6e30sInN1cnZleXMiOnt9LCJ3YWxsZXRzIjp7fSwiaW5pdGlhdGl2ZXMiOnt9LCJkYXRhLW1hbmFnZW1lbnQiOnt9fSwiaWF0IjoxNzYwMDAwMDAwLCJleHAiOjE4OTM0NTYwMDB9.HtKLLeW22uLwSzGAmL7nkdNJo5gLWQmGkmaqUQozWUbf172H5lemWegRbL_of_6LVi_jZ3iHXmIwXVI3FumMMRPZe0-FhEmIjwPklFMVlQbnimjO3ngvUPI4xzSf690Pzfvgk4msfoQ-NokuZJ7usys5blpbEGdfzo85UWWhX_o5NDGnYO9n-wSDR5GpElXeLT-2J4MLHZHYjdm9AUPcXg-p6mHKyQPFEcK710azZ4yQDnmEOJMIwkf3cYV592YnyxDtQQXW3mjFEbq6IVgoytM9KWaTsRvIm_f_1Zx6E5ak2V4jpkRykoC8sUhSfMTwknqNcoD7VXXDRfGGbxWAnQ"
   },
   "moduleConfig": {
     "audit": {
@@ -177,14 +151,7 @@
   },
   "uploads": {
     "maxFileSizeMb": 25,
-    "allowedExtensions": [
-      "pdf",
-      "png",
-      "jpg",
-      "jpeg",
-      "docx",
-      "xlsx"
-    ]
+    "allowedExtensions": ["pdf", "png", "jpg", "jpeg", "docx", "xlsx"]
   },
   "support": {
     "supportEmail": "support@example.com",
