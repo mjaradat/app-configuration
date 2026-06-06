@@ -10,10 +10,7 @@
   },
   "app": {
     "defaultLanguage": "en",
-    "supportedLanguages": [
-      "en",
-      "ar"
-    ],
+    "supportedLanguages": ["en", "ar"],
     "defaultDirection": "ltr",
     "defaultTheme": "light",
     "allowUserThemeSwitch": true,
@@ -33,18 +30,12 @@
     "enabled": true,
     "theme": {
       "defaultMode": "light",
-      "supportedModes": [
-        "light",
-        "dark"
-      ],
+      "supportedModes": ["light", "dark"],
       "allowUserThemeSwitch": true
     },
     "language": {
       "defaultLanguage": "en",
-      "supportedLanguages": [
-        "en",
-        "ar"
-      ],
+      "supportedLanguages": ["en", "ar"],
       "defaultDirection": "ltr"
     },
     "colors": {
@@ -131,9 +122,7 @@
     "licenseToken": "dev-unsigned",
     "devUnsignedPayload": {
       "clientCode": "demo-client",
-      "licensedModules": [
-        "audit"
-      ],
+      "licensedModules": ["audit", "appraisals", "surveys", "wallets"],
       "features": {
         "audit": {
           "regulations": true,
@@ -177,14 +166,7 @@
   },
   "uploads": {
     "maxFileSizeMb": 25,
-    "allowedExtensions": [
-      "pdf",
-      "png",
-      "jpg",
-      "jpeg",
-      "docx",
-      "xlsx"
-    ]
+    "allowedExtensions": ["pdf", "png", "jpg", "jpeg", "docx", "xlsx"]
   },
   "support": {
     "supportEmail": "support@example.com",
