@@ -123,9 +123,9 @@
   },
   "moduleConfig": {
     "audit": {
-      "baseUrl": "https://qc02.cubescpm.com/AuditManagement/BE",
-      "apiBaseUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
-      "healthCheckUrl": "https://qc02.cubescpm.com/AuditManagement/BE/api",
+      "baseUrl": "https://cubes-solutions.com",
+      "apiBaseUrl": "https://cubes-solutions.com/AM_Itr3/BE/api",
+      "healthCheckUrl": "https://cubes-solutions.com/AM_Itr3/BE/api",
       "capabilities": {
         "regulations": true,
         "reports": true,

@@ -113,8 +113,8 @@
     }
   },
   "auth": {
-    "baseUrl": "https://qc09.cubescpm.com/Cubes",
-    "tokenEndpoint": "https://qc09.cubescpm.com/Cubes/Auth/Token",
+    "baseUrl": "https://qc02.cubescpm.com/Cubes",
+    "tokenEndpoint": "https://qc02.cubescpm.com/Cubes/Auth/Token",
     "requiresClientKey": false,
     "idleTimeoutMinutes": 30
   },
