@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "notes": "No font binaries are packaged. The app should use installed/system fonts or separately self-host approved font files.",
+  "fonts": {
+    "english": {
+      "family": "Roboto",
+      "cssFamily": "Roboto, 'Segoe UI', Arial, sans-serif",
+      "source": "system-or-self-hosted",
+      "files": []
+    },
+    "arabic": {
+      "family": "Tahoma",
+      "cssFamily": "Tahoma, Arial, sans-serif",
+      "source": "system",
+      "files": []
+    }
+  }
+}

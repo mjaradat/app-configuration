@@ -1,0 +1,201 @@
+{
+  "$schema": "../../../schemas/client-runtime-config.schema.json",
+  "version": "2.0.0",
+  "publishedAt": "2026-06-22T00:00:00Z",
+  "client": {
+    "key": "cubes",
+    "displayName": "Cubes",
+    "shortName": "CUBES",
+    "environment": "testing"
+  },
+  "app": {
+    "defaultLanguage": "en",
+    "supportedLanguages": [
+      "en",
+      "ar"
+    ],
+    "defaultDirection": "ltr",
+    "defaultTheme": "light",
+    "allowUserThemeSwitch": true,
+    "allowUserLanguageSwitch": true,
+    "requestTimeoutMs": 30000
+  },
+  "startupFlow": {
+    "firstScreen": "client-runtime-config",
+    "secondScreen": "configuration-page",
+    "showClientRuntimeConfigBeforeConfigurationPage": true,
+    "allowSkipClientKey": true,
+    "navigateToConfigurationPageWhenSkipped": true,
+    "navigateToConfigurationPageWhenClientConfigLoaded": true,
+    "doNotBlockAppWhenClientConfigFails": true
+  },
+  "branding": {
+    "enabled": true,
+    "theme": {
+      "defaultMode": "light",
+      "supportedModes": [
+        "light",
+        "dark"
+      ],
+      "allowUserThemeSwitch": true
+    },
+    "language": {
+      "defaultLanguage": "en",
+      "supportedLanguages": [
+        "en",
+        "ar"
+      ],
+      "defaultDirection": "ltr"
+    },
+    "colors": {
+      "light": {
+        "primary": "#f49920",
+        "primaryHover": "#ec935e",
+        "primaryForeground": "#222230",
+        "secondary": "#f6f7f9",
+        "secondaryForeground": "#222230",
+        "accent": "#0179a8",
+        "accentForeground": "#ffffff",
+        "background": "#f6f7f9",
+        "surface": "#ffffff",
+        "surfaceMuted": "#f6f7f9",
+        "text": "#222230",
+        "textMuted": "#888c9b",
+        "border": "#888c9b",
+        "input": "#888c9b",
+        "ring": "#f49920",
+        "success": "#00a28a",
+        "warning": "#f7c46c",
+        "danger": "#e23232"
+      },
+      "dark": {
+        "primary": "#f49920",
+        "primaryHover": "#ec935e",
+        "primaryForeground": "#222230",
+        "secondary": "#222230",
+        "secondaryForeground": "#ffffff",
+        "accent": "#0179a8",
+        "accentForeground": "#ffffff",
+        "background": "#222230",
+        "surface": "#222230",
+        "surfaceMuted": "#2f2f3f",
+        "text": "#ffffff",
+        "textMuted": "#888c9b",
+        "border": "#888c9b",
+        "input": "#888c9b",
+        "ring": "#f49920",
+        "success": "#00a28a",
+        "warning": "#f7c46c",
+        "danger": "#e23232"
+      }
+    },
+    "radius": {
+      "sm": "4px",
+      "md": "8px",
+      "lg": "12px",
+      "xl": "16px"
+    },
+    "fonts": {
+      "english": {
+        "family": "Roboto",
+        "cssFamily": "Roboto, 'Segoe UI', Arial, sans-serif",
+        "source": "system-or-self-hosted",
+        "manifest": "../fonts/font-manifest.json"
+      },
+      "arabic": {
+        "family": "Tahoma",
+        "cssFamily": "Tahoma, Arial, sans-serif",
+        "source": "system",
+        "manifest": "../fonts/font-manifest.json"
+      }
+    },
+    "assets": {
+      "loginLogo": "../assets/logos/login-logo.svg",
+      "headerLogo": "../assets/logos/header-logo.svg",
+      "collapsedLogo": "../assets/logos/collapsed-logo.svg",
+      "faviconSvg": "../assets/icons/favicon.svg",
+      "faviconPng": "../assets/icons/favicon-32.png",
+      "appleTouchIcon": "../assets/icons/apple-touch-icon.png",
+      "appIcon1024": "../assets/icons/app-icon-1024.png",
+      "loginBackground": "../assets/images/login-background.svg",
+      "brandPreview": "../assets/images/brand-preview.png"
+    }
+  },
+  "auth": {
+    "baseUrl": "https://qc09.cubescpm.com/Cubes",
+    "tokenEndpoint": "https://qc09.cubescpm.com/Cubes/Auth/Token",
+    "requiresClientKey": false,
+    "idleTimeoutMinutes": 30
+  },
+  "license": {
+    "licenseToken": "dev-unsigned",
+    "devUnsignedPayload": {
+      "clientCode": "demo-client",
+      "licensedModules": [
+        "audit",
+        "appraisals",
+        "surveys",
+        "wallets"
+      ],
+      "features": {
+        "audit": {
+          "regulations": true,
+          "reports": true,
+          "administration": true
+        }
+      },
+      "issuedAt": "2026-06-01T23:27:22Z",
+      "expiresAt": "2027-06-01T23:27:22Z",
+      "licenseVersion": 1,
+      "mode": "dev-unsigned"
+    }
+  },
+  "moduleConfig": {
+    "audit": {
+      "baseUrl": "https://cubes-solutions.com",
+      "apiBaseUrl": "https://cubes-solutions.com/AM_Itr3/BE/api",
+      "healthCheckUrl": "https://cubes-solutions.com/AM_Itr3/BE/api",
+      "capabilities": {
+        "regulations": true,
+        "reports": true,
+        "administration": true
+      }
+    }
+  },
+  "features": {
+    "offlineMode": false,
+    "rememberClientKey": true,
+    "allowChangeClientKey": true,
+    "showClientNameInHeader": true,
+    "showClientLogoOnLogin": true,
+    "showModuleCards": true
+  },
+  "runtime": {
+    "maintenanceMode": false,
+    "minimumSupportedAppVersion": "1.0.0",
+    "forceUpdate": false,
+    "timezone": "Asia/Amman",
+    "dateFormat": "dd/MM/yyyy",
+    "timeFormat": "HH:mm"
+  },
+  "uploads": {
+    "maxFileSizeMb": 25,
+    "allowedExtensions": [
+      "pdf",
+      "png",
+      "jpg",
+      "jpeg",
+      "docx",
+      "xlsx"
+    ]
+  },
+  "support": {
+    "supportEmail": "support@example.com",
+    "supportPhone": "",
+    "helpUrl": ""
+  },
+  "security": {
+    "requiresHttps": true,
+    "allowInsecureHttpForTesting": false
+  }
+}
