@@ -128,27 +128,7 @@
     "idleTimeoutMinutes": 30
   },
   "license": {
-    "licenseToken": "dev-unsigned",
-    "devUnsignedPayload": {
-      "clientCode": "demo-client",
-      "licensedModules": [
-        "audit",
-        "appraisals",
-        "surveys",
-        "wallets"
-      ],
-      "features": {
-        "audit": {
-          "regulations": true,
-          "reports": true,
-          "administration": true
-        }
-      },
-      "issuedAt": "2026-06-01T23:27:22Z",
-      "expiresAt": "2027-06-01T23:27:22Z",
-      "licenseVersion": 1,
-      "mode": "dev-unsigned"
-    }
+    "licenseToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjdWJlcy1saWNlbnNlLXNlcnZpY2UiLCJhdWQiOiJjdWJlcy1odWIiLCJwcm9kdWN0IjoiY3ViZXMtaHViIiwiY2xpZW50Q29kZSI6ImN1YmVzIiwibGljZW5zZWRNb2R1bGVzIjpbImF1ZGl0IiwiYXBwcmFpc2FscyIsInN1cnZleXMiLCJ3YWxsZXRzIiwiaW5pdGlhdGl2ZXMiLCJkYXRhLW1hbmFnZW1lbnQiXSwiZmVhdHVyZXMiOnsiYXVkaXQiOnsicmVndWxhdGlvbnMiOnRydWUsInJlcG9ydHMiOnRydWUsImFkbWluaXN0cmF0aW9uIjp0cnVlfSwiYXBwcmFpc2FscyI6e30sInN1cnZleXMiOnt9LCJ3YWxsZXRzIjp7fSwiaW5pdGlhdGl2ZXMiOnt9LCJkYXRhLW1hbmFnZW1lbnQiOnt9fSwiaWF0IjoxNzYwMDAwMDAwLCJleHAiOjE4OTM0NTYwMDB9.N5Zohmy5Gbw5mmUt7t4_1yJMKZz7E7N6AuNpOqUk9kqkM6hL6Q68o5DRKQZq3wzhq0HWXyKC5BO-eVjjXjk_MAEXnhyzglTT4A84zezSzprziBP5Hd3lEflnzpnuz0s1RBnsQoqSstQZgJAeqVVB4IfFdBfzJgATLrGOt_cK7ufb8Bl_BR4Q9bOkxfdAY0jCRLUtsUmRbhbfp95g87Lt8P6i13dtog2XbAL4cnCfl2tg8kyf3R-JK7pfSpBg31hbaG_FE8K4TH-j1jIseBF_9M-ce2_SS0Oxt060VRdEImbfXwDClZZHgZrdFwuIRvnwJUbfkz1EGlZZaJnj19W9GQ"
   },
   "moduleConfig": {
     "audit": {
