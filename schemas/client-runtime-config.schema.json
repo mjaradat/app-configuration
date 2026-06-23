@@ -64,7 +64,21 @@
     },
     "branding": {
       "type": "object",
-      "additionalProperties": true
+      "additionalProperties": true,
+      "properties": {
+        "fonts": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "english": {
+              "$ref": "#/$defs/fontDefinition"
+            },
+            "arabic": {
+              "$ref": "#/$defs/fontDefinition"
+            }
+          }
+        }
+      }
     },
     "auth": {
       "type": "object",
@@ -185,6 +199,26 @@
     "security": {
       "type": "object",
       "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "fontDefinition": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "family": {
+          "type": "string"
+        },
+        "cssFamily": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "manifest": {
+          "type": "string"
+        }
+      }
     }
   }
 }
